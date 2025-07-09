@@ -1,6 +1,6 @@
-# stimulus-shared-transformation
+# convergent-transformations
 
-Code of the paper *Stimulus structure shapes a shared representational transformation in brains and models*. P. Marcos-Manchón and L. Fuentemilla (*Under review*).
+Code of the paper *Convergent transformations of visual representation in brains and models*. P. Marcos-Manchón and L. Fuentemilla (*Under review*).
 
 
 Methods overview

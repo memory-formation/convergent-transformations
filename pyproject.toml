@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convergence"
+version = "0.1.0"
+description = "Utility package for RSA and alignment analyses"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Pablo Marcos-Manchón", email = "pmarcos@ub.edu" }
+]
+maintainers = [
+  { name = "Pablo Marcos-Manchón", email = "pmarcos@ub.edu" }
+]
+keywords = [
+  "rsa",
+  "cka",
+  "neuroimaging",
+  "representational-similarity",
+  "machine-learning"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Scientific/Engineering :: Image Recognition",
+]
+
+[project.urls]
+repository = "https://github.com/memory-formation/convergent-transformations"
+homepage = "https://arxiv.org/abs/2507.13941"
+
+[tool.setuptools.packages.find]
+include = ["convergence*"]

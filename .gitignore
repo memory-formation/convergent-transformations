@@ -184,14 +184,5 @@ results/
 
 *.xlsx
 
-legacy/
-pending/
-
-!1_dataset_preparation/*ipynb
-!2_model_extraction/*.ipynb
-!3_alignment/*.ipynb
-!4_other_alignments/*.ipynb
-!5_notebooks/*.ipynb
-!7_legacy_notebooks/*.ipynb
+# Include the first figure for the readme
 !figures/panels/1-pipeline-github.svg
-figures_legacy

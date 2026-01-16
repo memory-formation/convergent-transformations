@@ -23,10 +23,13 @@ def add_cluster(data):
     return data
 
 
-def process_intersubject_rois(df, hcp_filename, top=10):
+def process_intersubject_rois(df, hcp_filename, top=10, within_subject=False):
     # Load cross subject data
     df = df.rename(columns={"similarity": "score"})
-    df = df.query("score < 1 and score > -1 and roi_x == roi_y and subject_i != subject_j").copy()
+    if within_subject:
+        df = df.query("score < 1 and score > -1 and roi_x == roi_y and subject_i == subject_j").copy()
+    else:
+        df = df.query("score < 1 and score > -1 and roi_x == roi_y and subject_i != subject_j").copy()
     df = df.groupby(["roi_x", "subject_i"]).aggregate({"score": "mean"}).reset_index()
     df = df.rename(columns={"roi_x": "roi", "subject_i": "subject"})
 

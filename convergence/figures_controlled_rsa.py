@@ -206,7 +206,7 @@ def plot_clusters_controled(
 def apa_star(p_value: float) -> str:
     """Return a string with the APA star notation for a given p-value."""
     if p_value < 0.0001:
-        return "****"
+        return "***" # "****"
     elif p_value < 0.001:
         return "***"
     elif p_value < 0.01:

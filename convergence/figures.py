@@ -25,6 +25,7 @@ def plot_boxplot_rois(
     vmax=0.26,
     strip_size=3,
     legend_kwargs={},
+    n=7,
     **kwargs,
 ):
     sns.boxplot(
@@ -72,7 +73,7 @@ def plot_boxplot_rois(
     ax.set_xticks(range(len(order)))
     ax.set_xticklabels(ax.get_xticklabels(), rotation=90, ha="center", fontsize=fontsize)
     # ax.grid(axis='y', linestyle='--', alpha=0.5)
-    for v in range(1, 7):
+    for v in range(1, n):
         color = "maroon" if v == 0 else "gray"
         ax.axhline(v * 0.05, color=color, linestyle="--", lw=0.5, zorder=-1)
 
@@ -288,6 +289,7 @@ def plot_cbar_set(
     figsize=(0.2, 6),
     labelpad=5,
     simmetric=True,
+    percent=False,
 ):
 
     abs_lim = max(abs(vmin), abs(vmax))
@@ -306,7 +308,7 @@ def plot_cbar_set(
         locator=locator,
         labelpad=labelpad,
         horizontal=False,
-        percent=False,
+        percent=percent,
         rotation=90,
         figsize=figsize,
     )
@@ -324,7 +326,7 @@ def plot_cbar_set(
         locator=locator,
         labelpad=labelpad,
         horizontal=True,
-        percent=False,
+        percent=percent,
         rotation=0,
         figsize=figsize[::-1],
     )

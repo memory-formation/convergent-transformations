@@ -28,4 +28,5 @@ Manuscript figures refers the numeration of arxiv preprint [https://arxiv.org/ab
 | [15b_miniature_shifted_strategy.ipynb](./15b_miniature_shifted_strategy.ipynb) | Illustration of shifted RSA strategy (miniature) | A2.A |
 | [16_tokenizer_analysis_supplementary.ipynb](./16_tokenizer_analysis_supplementary.ipynb) | Tokenizer-level control for language–brain RSA | A4.A-E |
 | [17_untrained_models_similarity.ipynb](./17_untrained_models_similarity.ipynb) | Untrained models control (CKA) | Not included |
+| [18_revision_analyses.ipynb](./18_revision_analyses.ipynb) | Rebutal anlyses | Rebuttal Figures |
 

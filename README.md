@@ -39,6 +39,8 @@ The code is organized into the following directories:
 This work uses the Natural Scenes Dataset (NSD), BOLD5000, and THINGS‑fMRI.  
 Preprocessing scripts (1_dataset_preparation → 4_other_alignments) generate the `derivatives/` folder, which holds all RDMs and alignment outputs. See `derivatives/README.md` for details. The notebooks in `5_notebooks` uses these derivatives files to produce figures and statistics.
 
+Derivatives files already generated can be downloaded in from [https://doi.org/10.6084/m9.figshare.30753239](https://doi.org/10.6084/m9.figshare.30753239).
+
 
 ## Installation
 

@@ -33,6 +33,8 @@ The code is organized into the following directories:
   Scripts for supplementary and control alignments (e.g., untrained models, tokenizer controls).
 - [5_notebooks/](./5_notebooks)  <br/>
   Jupyter notebooks reproducing all figures and analyses in the manuscript.
+- [6_revision/](./6_revision)  <br/>
+  Scripts for generating additional data for the manuscript revision.
 
 ## Data
 

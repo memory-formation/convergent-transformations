@@ -187,3 +187,4 @@ results/
 # Include the first figure for the readme
 !figures/panels/1-pipeline-github.svg
 !5_notebooks/18_revision_analyses.ipynb
+!7_revision/*.ipynb

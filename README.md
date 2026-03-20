@@ -1,10 +1,10 @@
-# Convergent transformations of visual representation in brains and models
+# Shared representations in brains and models reveal a two-route cortical organization during scene perception
 
 [![arXiv](https://img.shields.io/badge/arXiv-2507.13941-b31b1b.svg)](https://arxiv.org/abs/2507.13941) [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
 ## Abstract
 
-A fundamental question in cognitive neuroscience is what shapes visual perception: the external world's structure or the brain's internal architecture. Although some perceptual variability can be traced to individual differences, brain responses to naturalistic stimuli evoke similar activity patterns across individuals, suggesting a convergent representational principle. Here, we test if this stimulus-driven convergence follows a common trajectory across people and deep neural networks (DNNs) during its transformation from sensory to high-level internal representations. We introduce a unified framework that traces representational flow by combining inter-subject similarity with alignment to model hierarchies. Applying this framework to three independent fMRI datasets of visual scene perception, we reveal a cortex-wide network, conserved across individuals, organized into two pathways: a medial-ventral stream for scene structure and a lateral-dorsal stream tuned for social and biological content. This functional organization is captured by the hierarchies of vision DNNs but not language models, reinforcing the specificity of the visual-to-semantic transformation. These findings show a convergent computational solution for visual encoding in both human and artificial vision, driven by the structure of the external world.
+The brain transforms visual inputs into high-dimensional cortical representations that support diverse cognitive and behavioral goals. Characterizing how this information is organized and routed across the human brain is essential for understanding how we process complex visual scenes. Here, we applied representational similarity analysis to 7T fMRI data collected during natural scene viewing. We quantified representational geometry shared across individuals and compared it to hierarchical features from vision and language neural networks across model layers. By integrating these comparisons with representational connectivity between cortical regions, we identified two distinct processing routes: a ventromedial pathway specialized for scene layout and environmental context, and a lateral occipitotemporal pathway selective for animate content. Vision models aligned with shared structure in both routes, whereas language models corresponded primarily with the lateral pathway and showed negative alignment in early visual and ventral cortex. These findings refine classical visual-stream models by revealing a distributed cortical network with separable representational routes for context and animate content during scene perception.
 
 
 ## Methods overview
@@ -35,6 +35,8 @@ The code is organized into the following directories:
   Jupyter notebooks reproducing all figures and analyses in the manuscript.
 - [6_revision/](./6_revision)  <br/>
   Scripts for generating additional data for the manuscript revision.
+- [7_revision/](./7_revision)  <br/>
+  More scripts and notebooks for the revision.
 
 ## Data
 
@@ -73,12 +75,12 @@ This work was supported by the Spanish Ministerio de Ciencia, Innovación y Univ
 
 If you find the code useful for your research, please cite our preprint
 
-> Marcos‑Manchón, P., & Fuentemilla, L. (2025). Convergent transformations of visual representation in brains and models (arXiv preprint). Retrieved from [https://arxiv.org/abs/2507.13941](https://arxiv.org/abs/2507.13941)
+> Marcos‑Manchón, P., & Fuentemilla, L. (2025). Shared representations in brains and models reveal a two-route cortical organization during scene perception (arXiv preprint). Retrieved from [https://arxiv.org/abs/2507.13941](https://arxiv.org/abs/2507.13941)
 
 BibTeX entry:
 ```bibtex
 @misc{marcosmanchon2025,
-  title        = {Convergent transformations of visual representation in brains and models},
+  title        = {Shared representations in brains and models reveal a two-route cortical organization during scene perception},
   author       = {Marcos‑Manchón, Pablo and Fuentemilla, Lluís},
   year         = {2025},
   eprint       = {2507.13941},
@@ -90,4 +92,6 @@ BibTeX entry:
 
 If you use parts of the code related to model‑feature extraction or CKA alignment, please also cite:
 Huh, M., Cheung, B., Wang, T., & Isola, P. (2024). *The Platonic Representation Hypothesis*. ICLR. (Code: [https://github.com/minyoungg/platonic-rep/](https://github.com/minyoungg/platonic-rep/)).
+
+
 
